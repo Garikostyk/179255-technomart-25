@@ -72,22 +72,25 @@
       <section class="filter">
           <fieldset class="filter-brands">
           <legend>Производители:</legend>
-          <ul>
-            <li>BOSCH</li>
-            <li>Интерскол</li>
-            <li>Makita</li>
-            <li>Dewalt</li>
-            <li>Hitachi</li>
-          </ul>
+          <input type="checkbox" name="brands" value="BOSCH" id="BOSCH">
+          <label for="BOSCH">BOSCH</label><br>
+          <input type="checkbox" name="brands" value="Интерскол" id="interskol">
+          <label for="interskol">Интерскол</label><br>
+          <input type="checkbox" name="brands" value="Makita" id="Makita">
+          <label for="Makita">Makita</label><br>
+          <input type="checkbox" name="brands" value="Dewalt" id="Dewalt">
+          <label for="Dewalt">Dewalt</label><br>
+          <input type="checkbox" name="brands" value="Hitachi" id="Hitachi">
+          <label for="Hitachi">Hitachi</label><br>
         </fieldset>
         <fieldset class="filter-power">
           <legend>Питание</legend>
-          <ul>
-            <li>Аккумуляторные</li>
-            <li>Сетевые</li>
-          </ul>
+          <input type="radio" name="power-type" value="accumulator" id="accumulator">
+          <label for="accumulator">Аккумуляторные</label><br>
+          <input type="radio" name="power-type" value="ac-power" id="ac-power">
+          <label for="ac-power">Сетевые</label>
         </fieldset>
-        <a href="#">показать</a>
+        <button type="submit" name="filter-button">Показать</button>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">

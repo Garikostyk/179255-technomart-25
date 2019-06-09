@@ -1,3 +1,84 @@
+body{
+  padding: 0;
+  margin: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: none;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top {
+  font-size: 17px;
+  background-color: #293449;
+  }
+
+.logo-background {
+  width: 220px;
+  height: 45px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+.header-top input {
+  background-color: #293449;
+  border: none;
+  color: #ffffff;
+}
+
+.order-background {
+  width: 150px;
+  height: 42px;
+  background-color: #63a63e;
+}
+
+.logo-background:hover,
+.logo-background:focus {
+  background-color: #ca2c37;
+  border-bottom: 5px solid #9a212a;
+}
+
+.header-top:hover,
+.header-top:focus,
+.header-top input:hover {
+  background-color: #212a3a;
+}
+
+.order-background:hover,
+.order-background:focus {
+  background-color: #5fbb2d;
+}
+
+.header-top:active {
+  background-color: #161d29;
+}
+
+.logo-background:active {
+  background-color: #ba2732;
+  border-bottom: 5px solid #8e1e26;
+}
+
+.header-top input:focus {
+  background-color: #ffffff;
+}
+
+.order-background:active {
+  background-color: #518534;
+}
+
+.header-top a {
+  color: #ffffff;
+}
+
+/* скрываю модальные окна */
 .modal {
   display: none;
 }

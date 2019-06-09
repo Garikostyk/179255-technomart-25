@@ -78,6 +78,61 @@ a {
   color: #ffffff;
 }
 
+.header-middle {
+  background-color: #f4f7f9;
+}
+
+.header-middle h1 {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 500;
+  font-style: italic;
+  color: #ee3643;
+  text-align: left;
+}
+
+.telephone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.nav-user-list {
+  list-style: none;
+  font-size: 21px;
+  line-height: 21px;
+}
+.nav-user-list a {
+  color: #000000;
+}
+
+.log-in-item {
+  width: 121px;
+  height: 45px;
+  background-color: #ffffff;
+}
+
+.register-item {
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+}
+
+.nav-user-list a:hover,
+.nav-user-list a:focus {
+  color: #ee3643
+}
+
+.nav-user-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* скрываю модальные окна */
 .modal {
   display: none;

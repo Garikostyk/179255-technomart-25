@@ -31,20 +31,20 @@ a {
     background-color: #161d29;
   }
 
-.logo-background {
+.header-logo-background {
   width: 220px;
   height: 45px;
   background-color: #ee3643;
   border-bottom: 5px solid #b52933;
 }
 
-.logo-background:hover,
-.logo-background:focus {
+.header-logo-background:hover,
+.header-logo-background:focus {
   background-color: #ca2c37;
   border-bottom: 5px solid #9a212a;
 }
 
-.logo-background:active {
+.header-logo-background:active {
   background-color: #ba2732;
   border-bottom: 5px solid #8e1e26;
 }
@@ -201,9 +201,68 @@ a {
   background-color: #32425c;
 }
 
-.footer-top {
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-background-logo {
+  width: 220px;
+  height: 63px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+.footer-top-nav-item a {
   color: #f1f5f7;
-  
+}
+
+.footer-top-nav-item a:hover,
+.footer-top-nav-item a:focus,
+.footer-middle-nav-item a:hover,
+.footer-middle-nav-item a:focus {
+  text-decoration: underline;
+}
+
+.footer-top-nav-item a:active {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.footer-middle p {
+  color: #f3f7f9;
+}
+
+.footer-middle-nav-item a {
+  color: #ffd180;
+}
+
+.footer-middle-nav-item a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+/* Стилизация соц.сетей */
+
+.footer-link {
+  color: #ffd180;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: underline;
+}
+
+.footer-link:active {
+  color: #ee3643;
+  text-decoration: none;
 }
 
 /* скрываю модальные окна */

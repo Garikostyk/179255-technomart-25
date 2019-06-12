@@ -94,25 +94,25 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter-brands">
           <legend>Производители:</legend>
-          <input type="checkbox" name="brands" value="BOSCH" id="BOSCH">
+          <input class="filter-input filter-input-checkbox" type="checkbox" name="brands" value="BOSCH" id="BOSCH">
           <label for="BOSCH">BOSCH</label><br>
-          <input type="checkbox" name="brands" value="Интерскол" id="interskol">
+          <input class="filter-input filter-input-checkbox" type="checkbox" name="brands" value="Интерскол" id="interskol">
           <label for="interskol">Интерскол</label><br>
-          <input type="checkbox" name="brands" value="Makita" id="Makita">
+          <input class="filter-input filter-input-checkbox" type="checkbox" name="brands" value="Makita" id="Makita">
           <label for="Makita">Makita</label><br>
-          <input type="checkbox" name="brands" value="Dewalt" id="Dewalt">
+          <input class="filter-input filter-input-checkbox" type="checkbox" name="brands" value="Dewalt" id="Dewalt">
           <label for="Dewalt">Dewalt</label><br>
-          <input type="checkbox" name="brands" value="Hitachi" id="Hitachi">
+          <input class="filter-input filter-input-checkbox" type="checkbox" name="brands" value="Hitachi" id="Hitachi">
           <label for="Hitachi">Hitachi</label><br>
         </fieldset>
         <fieldset class="filter-power">
           <legend>Питание</legend>
-          <input type="radio" name="power-type" value="accumulator" id="accumulator">
+          <input class="filter-input filter-input-radio" type="radio" name="power-type" value="accumulator" id="accumulator">
           <label for="accumulator">Аккумуляторные</label><br>
-          <input type="radio" name="power-type" value="ac-power" id="ac-power">
+          <input class="filter-input filter-input-radio" type="radio" name="power-type" value="ac-power" id="ac-power">
           <label for="ac-power">Сетевые</label>
         </fieldset>
-        <button type="submit" name="filter-button">Показать</button>
+        <button type="submit" class="filter-button" name="filter-button">Показать</button>
       </form>
       </section>
       <section class="catalog">
@@ -297,9 +297,11 @@
 
     <footer class="main-footer">
       <div class="footer-top">
-        <a class="button" href="index.html">
-          <img src="img/logo-technomart-footer.svg" width="138" height="23" alt="Логотип компании Техномарт">
-        </a>
+        <div class="footer-background-logo">
+          <a class="button" href="index.html">
+            <img src="img/logo-technomart-footer.svg" width="138" height="23" alt="Логотип компании Техномарт">
+          </a>
+        </div>
         <ul>
           <li><a href="company.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>

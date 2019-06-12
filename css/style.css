@@ -278,6 +278,28 @@ a {
   line-height: 30px;
 }
 
+.filter-form label {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-input:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+
+  background-color: inherit;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
 /* стилизация футера */
 
 .main-footer {

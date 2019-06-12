@@ -91,13 +91,13 @@ a {
   text-align: left;
 }
 
-.telephone {
+.header-middle-contacts-telephone {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
 }
 
-.adress {
+.header-middle-contacts-adress {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -153,12 +153,63 @@ a {
 .main-nav-list li:focus {
   background-color: #293449;
 }
+
 .main-nav-list li:active {
   background-color: #1d2739;
   }
+
 .main-nav a {
   color: #ffffff;
 }
+
+/* Стилизация дополнительных страниц */
+.header-middle p:nth-child(1) {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 500;
+  font-style: italic;
+  color: #ee3643;
+  text-align: left;
+}
+
+.nav-user-container {
+  width: 299px;
+  height: 45px;
+
+  background-color: #ffffff
+}
+
+.user-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.nav-user-cabinet {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.nav-user-cabinet li {
+  list-style: none;
+  text-decoration: underline;
+}
+
+.nav-user-cabinet a {
+  color: #32425c;
+}
+
+.nav-user-cabinet a:hover,
+.nav-user-cabinet a:focus {
+  color: #ee3643;
+}
+
+.nav-user-cabinet a:active {
+  color: rgba(50, 66, 92, 0.3)
+}
+
+
+/* стилизация главных секций страницы */
 
 .main-about-company h2,
 .main-contacts h2 {
@@ -194,6 +245,40 @@ a {
 .button:active {
   background-color: #ba2732;
 }
+
+/* стилизация дополнительных страниц */
+.container {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.name-item-catalog {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #f2f6f8;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* стилизация футера */
 
 .main-footer {
   font-size: 18px;

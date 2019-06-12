@@ -307,7 +307,8 @@ h3 {
   list-style: none;
 }
 
-.catalog-item {
+.catalog-item,
+.catalog-item-new {
   border: 1px solid #e5e5e5;
 }
 

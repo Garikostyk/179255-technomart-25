@@ -246,7 +246,14 @@ a {
   background-color: #ba2732;
 }
 
-/* стилизация дополнительных страниц */
+/* стилизация главной секции дополнительных страниц */
+h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+
+}
+
 .container {
   font-family: "PT Sans", Arial, sans-serif;
 }
@@ -298,6 +305,65 @@ a {
 
 .catalog-list {
   list-style: none;
+}
+
+.catalog-item {
+  border: 1px solid #e5e5e5;
+}
+
+.item-action-hidden {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.action-buy {
+  color: #ffffff;
+
+  background-color: #63a63e;
+  box-shadow: 0 0 3px #367315;
+  border-radius: 2px;
+}
+
+.action-buy:hover,
+.action-buy:focus {
+  background-color: #5fbb2d;
+}
+
+.action-buy:active {
+  background-color: #518534;
+}
+
+.action-bookmarks {
+  color: #32425c;
+
+  background-color: inherit;
+  border: 3px solid #63a63e;
+  border-radius: 2px;
+}
+
+.action-bookmarks:hover,
+.action-bookmarks:focus {
+  border: 3px solid #32425c;
+}
+
+.action-bookmarks:active {
+  opacity: 0.3;
+}
+
+.price {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.old-price {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.current-price {
+  color: #ffffff;
 }
 
 /* стилизация футера */

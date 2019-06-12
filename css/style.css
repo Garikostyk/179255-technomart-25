@@ -247,12 +247,6 @@ a {
 }
 
 /* стилизация главной секции дополнительных страниц */
-h3 {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-
-}
 
 .container {
   font-family: "PT Sans", Arial, sans-serif;
@@ -273,6 +267,7 @@ h3 {
   font-size: 30px;
   line-height: 30px;
   background-color: #f2f6f8;
+  text-transform: uppercase;
 }
 
 .filter fieldset {
@@ -305,6 +300,13 @@ h3 {
 
 .catalog-list {
   list-style: none;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+
 }
 
 .catalog-item,

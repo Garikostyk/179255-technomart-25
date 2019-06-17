@@ -445,3 +445,57 @@ a {
 .modal {
   display: none;
 }
+
+/* Сеточные стили */
+
+/* для подсветки уровней */
+body > * {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+
+body > * > *  {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+/* body > * > * > *  {
+  background-color: rgba(0, 255, 0, 0.3);
+} */
+
+/* для подсветки уровней */
+
+.main-header {
+  margin-bottom: 59px;
+
+  /* временно для сетки */
+  min-height: 278px;
+}
+
+.header-top {
+
+  /* временно для сетки */
+  min-height: 42px;
+}
+
+.header-logo-background {
+
+}
+
+.header-search {
+
+}
+
+.header-middle {
+  margin-bottom: 44px;
+
+  /* временно для сетки */
+  min-height: 68px;
+}
+
+
+.main-nav {
+  margin-bottom: 60px;
+
+  /* временно для сетки */
+  min-height: 60px;
+}

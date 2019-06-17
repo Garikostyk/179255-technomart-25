@@ -448,6 +448,12 @@ a {
 
 /* Сеточные стили */
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 /* для подсветки уровней */
 body > * {
   background-color: rgba(255, 0, 0, 0.3);
@@ -465,20 +471,19 @@ body > * > *  {
 /* для подсветки уровней */
 
 .main-header {
-  margin-bottom: 59px;
-
   /* временно для сетки */
   min-height: 278px;
 }
 
 .header-top {
-
-  /* временно для сетки */
-  min-height: 42px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.header-logo-background {
-
+.header-top .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-search {
@@ -486,12 +491,18 @@ body > * > *  {
 }
 
 .header-middle {
-  margin-bottom: 44px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 59px;
 
   /* временно для сетки */
-  min-height: 68px;
+  min-height: 320px;
 }
 
+.header-middle-wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .main-nav {
   margin-bottom: 60px;

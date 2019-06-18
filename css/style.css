@@ -82,7 +82,7 @@ a {
   background-color: #f4f7f9;
 }
 
-.header-middle h1 {
+.header-middle-wrapper h1 {
   font-size: 16px;
   line-height: 23px;
   font-weight: 500;
@@ -248,7 +248,7 @@ a {
 
 /* стилизация главной секции дополнительных страниц */
 
-.container {
+.inner-container {
   font-family: "PT Sans", Arial, sans-serif;
 }
 .breadcrumbs {
@@ -454,27 +454,6 @@ a {
   padding: 0 10px;
 }
 
-/* для подсветки уровней */
-body > * {
-  background-color: rgba(255, 0, 0, 0.3);
-}
-
-
-body > * > *  {
-  background-color: rgba(255, 255, 0, 0.3);
-}
-
-/* body > * > * > *  {
-  background-color: rgba(0, 255, 0, 0.3);
-} */
-
-/* для подсветки уровней */
-
-.main-header {
-  /* временно для сетки */
-  min-height: 278px;
-}
-
 .header-top {
   display: flex;
   flex-direction: column;
@@ -496,17 +475,143 @@ body > * > *  {
   margin-bottom: 59px;
 
   /* временно для сетки */
-  min-height: 320px;
+  /* min-height: 320px; */
 }
 
 .header-middle-wrapper {
-  flex-direction: column;
+  display: flex;
   justify-content: space-between;
+
+  margin-bottom: 44px;
+}
+
+.header-middle-wrapper h1 {
+  width: 300px;
+
+}
+
+.header-middle-wrapper .contacts {
+  width: 300px;
+}
+
+.header-middle-wrapper .nav-user {
+  width: 300px;
+}
+
+.nav-user-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.log-in-item {
+  width: 121px;
+}
+
+.register-item {
+  width: 150px;
+
 }
 
 .main-nav {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 
   /* временно для сетки */
   min-height: 60px;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 0;
+  padding: 0;
+
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 86px;
+}
+
+.main-about-company {
+  width: 540px;
+
+}
+
+.main-contacts {
+  width: 300px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 32px;
+}
+
+.footer-top-nav-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 570px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.footer-middle {
+  display: flex;
+
+  margin-bottom: 53px;
+}
+
+.footer-middle p {
+  width: 380px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-middle-nav-list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 540px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-bottom {
+  display: flex;
+
+  width: 100%;
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-feedback-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+
 }

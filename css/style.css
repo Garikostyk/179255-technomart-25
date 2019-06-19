@@ -490,6 +490,11 @@ a {
 
 }
 
+.header-middle-wrapper p:first-child {
+  width: 300px;
+
+}
+
 .header-middle-wrapper .contacts {
   width: 300px;
 }
@@ -507,6 +512,30 @@ a {
   list-style: none;
 }
 
+.nav-user-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav-user-cabinet {
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-cabinet-item:nth-of-type(1) {
+  margin-right: 15px;
+}
+
+.user-cabinet-item:nth-of-type(2) {
+  margin-left: 13px;
+}
+
 .log-in-item {
   width: 121px;
 }
@@ -517,7 +546,7 @@ a {
 }
 
 .main-nav {
-  /* margin-bottom: 60px; */
+  margin-bottom: 60px;
 
   /* временно для сетки */
   min-height: 60px;

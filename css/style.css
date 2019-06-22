@@ -261,13 +261,16 @@ a {
   color: #000000;
 }
 
-.name-item-catalog {
+.name-item-catalog h1 {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 500;
   font-size: 30px;
   line-height: 30px;
   background-color: #f2f6f8;
   text-transform: uppercase;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  padding-left: 30px;
 }
 
 .filter fieldset {
@@ -307,10 +310,10 @@ a {
   line-height: 20px;
   font-weight: 700;
 
+
 }
 
-.catalog-item,
-.catalog-item-new {
+.catalog-item {
   border: 1px solid #e5e5e5;
 }
 
@@ -441,6 +444,16 @@ a {
   text-decoration: none;
 }
 
+/* скрываю невидимые элементы для скринридера */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/* скрываю невидимые элементы для скринридера */
+
 /* скрываю модальные окна */
 .modal {
   display: none;
@@ -454,11 +467,6 @@ a {
   padding: 0 10px;
 }
 
-.header-top {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 
 .header-top .container {
   display: flex;
@@ -472,6 +480,7 @@ a {
 .header-middle {
   display: flex;
   width: 100%;
+  padding-top: 47px;
   margin-bottom: 59px;
 
   /* временно для сетки */
@@ -555,11 +564,25 @@ a {
 .main-nav-list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
 
 }
+
+.breadcrumbs {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+
+}
+
+.breadcrumbs li {
+  padding-left: 43px;
+}
+
 
 .main-wrapper {
   display: flex;
@@ -575,6 +598,42 @@ a {
 
 .main-contacts {
   width: 300px;
+}
+
+.filter {
+  width: 220px;
+}
+
+.catalog {
+  width: 700px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  /* Временно  */
+  min-height: 318px;
+
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right:  0;
 }
 
 .footer-top {
@@ -610,6 +669,7 @@ a {
   display: flex;
   justify-content: space-between;
 
+
   width: 540px;
   margin: 0;
   padding: 0;
@@ -642,5 +702,4 @@ a {
   justify-content: space-between;
 
   width: 300px;
-
 }

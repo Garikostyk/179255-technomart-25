@@ -446,6 +446,8 @@ a {
 /* скрываю невидимые элементы для скринридера */
 .visually-hidden {
   position: absolute;
+  display: flex;
+  white-space: nowrap;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
@@ -623,7 +625,7 @@ a {
 }
 
 .catalog-item {
-  width: 220px;
+  width: 218px;
   margin-bottom: 20px;
   margin-right: 20px;
 

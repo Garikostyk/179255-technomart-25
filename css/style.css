@@ -161,23 +161,63 @@ input[type="search"]::-moz-placeholder {
   text-align: left;
 }
 
+.header-middle-wrapper .contacts {
+  width: 300px;
+  margin-top: 12px;
+}
+
 .header-middle-contacts-telephone {
+  position: relative;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
 
-  border: 
+  width: 144px;
+  padding: 7px 49px 8px 71px;
+  border: 3px solid #ffffff;
+}
+
+.header-middle-contacts-telephone::before {
+  content: "";
+
+  position:absolute;
+  top: 10px;
+  left: 12px;
+
+  width: 19px;
+  height: 19px;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .header-middle-contacts-adress {
+  display: block;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  padding: 0 0 0 10px;
 }
 
 .nav-user-list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
   font-size: 21px;
   line-height: 21px;
+
+  list-style: none;
+}
+
+.register-item {
+  width: 150px;
+  height: 45px;
+  background-color: #ffffff;
+  margin-left: 10px;
 }
 
 .nav-user-list li {
@@ -185,7 +225,40 @@ input[type="search"]::-moz-placeholder {
 }
 
 .nav-user-list a {
+  display: block;
   color: #000000;
+}
+
+.log-in-item {
+  width: 121px;
+  height: 45px;
+  background-color: #ffffff;
+}
+
+.log-in-item a {
+  position: relative;
+  padding: 11px 27px 11px 48px;
+}
+
+.log-in-item a::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+
+}
+
+.register-item a {
+  padding: 11px 25px 11px 25px;
 }
 
 .nav-user-list a:hover,
@@ -197,21 +270,20 @@ input[type="search"]::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.log-in-item {
-  width: 121px;
-  height: 45px;
-  background-color: #ffffff;
+.log-in-item a:hover::before,
+.log-in-item a:focus::before {
+  opacity: 1;
 }
 
-.register-item {
-  width: 150px;
-  height: 45px;
-  background-color: #ffffff;
+.log-in-item a:active::before {
+  opacity: 0.3;
 }
 
 .main-nav {
   font-size: 17px;
   line-height: 17px;
+  margin-bottom: 60px;
+  padding: 0 23px;
 
   background-color: #32425c;
   border-bottom: 5px solid #293449;
@@ -230,7 +302,29 @@ input[type="search"]::-moz-placeholder {
   background-color: #1d2739;
   }
 
-.main-nav a {
+.main-nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+  margin: 0;
+  padding: 0;
+}
+/*
+.main-nav-list:first-child {
+ padding-left: 23px;
+}
+
+.main-nav-list:last-of-type {
+ padding-right: 23px;
+} */
+
+.main-nav-list a {
+  display: block;
+  /* padding: 16px 30px 15px; */
+  padding: 21px 29px 19px 33px;
+
   color: #ffffff;
 }
 
@@ -612,7 +706,7 @@ input[type="search"]::-moz-placeholder {
   padding-left: 50px;
 }
 
- .basket::before {
+.basket::before {
   content: "";
 
   position: absolute;
@@ -622,7 +716,6 @@ input[type="search"]::-moz-placeholder {
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.3;
 
   width: 15px;
   height: 15px;
@@ -630,9 +723,10 @@ input[type="search"]::-moz-placeholder {
 
 .order-background .action-order {
   display: block;
-  width: 150px;
+  width: 130px;
   padding-left: 20px;
   padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 
@@ -650,11 +744,11 @@ input[type="search"]::-moz-placeholder {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 44px;
+  margin-bottom: 24px;
 }
 
 .header-middle-wrapper h1 {
-  width: 300px;
+  width: 247px;
   margin-left: 53px;
   margin-top: 1px;
 }
@@ -664,22 +758,11 @@ input[type="search"]::-moz-placeholder {
 
 }
 
-.header-middle-wrapper .contacts {
-  width: 300px;
-}
-
 .header-middle-wrapper .nav-user {
   width: 300px;
 }
 
-.nav-user-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
-}
 
 .nav-user-container {
   display: flex;
@@ -705,29 +788,8 @@ input[type="search"]::-moz-placeholder {
   margin-left: 13px;
 }
 
-.log-in-item {
-  width: 121px;
-}
-
 .register-item {
   width: 150px;
-
-}
-
-.main-nav {
-  margin-bottom: 60px;
-
-  /* временно для сетки */
-  min-height: 60px;
-}
-
-.main-nav-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
-  margin: 0;
-  padding: 0;
 
 }
 

@@ -283,7 +283,7 @@ input[type="search"]::-moz-placeholder {
   font-size: 17px;
   line-height: 17px;
   margin-bottom: 60px;
-  padding: 0 23px;
+  padding: 0 12px;
 
   background-color: #32425c;
   border-bottom: 5px solid #293449;
@@ -309,7 +309,7 @@ input[type="search"]::-moz-placeholder {
 
 
   margin: 0;
-  padding: 0;
+  padding: 0 7px;
 }
 /*
 .main-nav-list:first-child {
@@ -383,24 +383,59 @@ input[type="search"]::-moz-placeholder {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
+
+  margin-bottom: 36px;
 }
 
-.main-about-company p {
+.main-about-company p,
+.main-contacts p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+
+}
+
+.main-about-company p{
+  margin-bottom: 36px;
+}
+
+.main-about-company p:last-child {
+  margin-bottom: 26px;
 }
 
 .logistics-company-list {
   font-size: 18px;
   line-height: 20px;
   list-style: none;
+
+  margin-bottom: 36px;
+}
+
+.logistics-company-list li {
+  margin-bottom: 24px;
 }
 
 .button {
   background-color: #ee3643;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.button-about-company {
+  display: block;
+  width: 140px;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+}
+
+.button-feedback {
+  display: block;
+  border-radius: 3px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 63px;
 }
 
 .button:hover,
@@ -411,6 +446,12 @@ input[type="search"]::-moz-placeholder {
 .button:active {
   background-color: #ba2732;
 }
+
+.main-contacts .main-contacts-maps {
+  margin-top: 36px;
+  margin-bottom: 40px;
+}
+
 
 /* стилизация главной секции дополнительных страниц */
 

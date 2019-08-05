@@ -597,6 +597,13 @@ input[type="search"]::-moz-placeholder {
   border-bottom: 5px solid #b52933;
 }
 
+.footer-background-logo .logo {
+  display: block;
+  width: 220px;
+  margin-left: 41px;
+  margin-top: 20px;
+}
+
 .footer-top-nav-item a {
   color: #f1f5f7;
 }

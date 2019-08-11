@@ -926,8 +926,12 @@ input[type="search"]::-moz-placeholder {
   width: 570px;
   margin: 0;
   padding: 0;
-
 }
+
+.footer-top-nav-list li {
+  padding-top: 42px;
+}
+
 
 .footer-middle {
   display: flex;
@@ -939,6 +943,7 @@ input[type="search"]::-moz-placeholder {
   width: 380px;
   margin: 0;
   padding: 0;
+  margin-right: 30px;
 }
 
 .footer-middle-nav-list {

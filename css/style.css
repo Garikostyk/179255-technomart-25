@@ -129,6 +129,11 @@ input[type="search"]::-moz-placeholder {
   opacity: 1;
 }
 
+.basket-background {
+  display: flex;
+  background-color: #ee3643;
+}
+
 .order-background {
   width: 150px;
   height: 42px;
@@ -737,17 +742,17 @@ input[type="search"]::-moz-placeholder {
 .header-top input:hover,
 .bookmarks:hover,
 .bookmarks:focus,
-.basket:hover,
-.basket:focus {
+.container > .basket:hover,
+.container > .basket:focus {
   background-color: #212a3a;
 }
 
 .bookmarks:active,
-.basket:active {
+.container > .basket:active {
   background-color: #161d29;
 }
 
-.container .basket {
+.basket {
   position: relative;
   width: 100px;
   padding-top: 12px;
@@ -795,27 +800,73 @@ input[type="search"]::-moz-placeholder {
   margin-bottom: 24px;
 }
 
-.header-middle-wrapper h1 {
+.header-middle-wrapper h1,
+.header-middle-wrapper p:first-child {
   width: 247px;
   margin-left: 53px;
   margin-top: 1px;
-}
-
-.header-middle-wrapper p:first-child {
-  width: 300px;
-
 }
 
 .header-middle-wrapper .nav-user {
   width: 300px;
 }
 
-
-
 .nav-user-container {
   display: flex;
   justify-content: space-between;
+}
 
+.nav-user-container a:first-child {
+  position: relative;
+  padding-top: 14px;
+  padding-left: 47px;
+}
+
+.nav-user-container a:first-child::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 20px;
+  height: 18px;
+
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.nav-user-container a:last-child {
+  position: relative;
+  padding-top: 14px;
+  padding-right: 29px;
+}
+
+.nav-user-container a:last-child::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  right: 10;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.nav-user-container a:hover::before,
+.nav-user-container a:focus::before {
+  opacity: 1;
+}
+
+. a:active::before {
+  opacity: 0.3;
 }
 
 .nav-user-cabinet {
